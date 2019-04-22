@@ -1,6 +1,19 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
+/**
+ * 주소에 따라 다른 화면을 보여줘야할 때 react-router를 사용한다.
+ * BrowserRouter로 감싼 다음 
+ * 경로에 따라 보여줄 컴포넌트를 Route 컴포넌트를 사용해 정의하고
+ * Link 컴포넌트를 사용해 해당 주소로 분기한다.
+ */
+
+/**
+ * <Route path="/" exact component={Index} />
+ *  path는 경로를 넣고 comopnent에는 컴포넌트를 넣으면된다.
+ *  컴포넌트는 <를 사용하지 않고 그냥 이름 그대로 넣는다.
+ */
 
 function Index() {
   return <h2>Home</h2>;
